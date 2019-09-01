@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;   
+    background: rgba(33,33,33);
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.clock {
+    font-family: 'Roboto Mono', 'Consolas', 'Courier New';
+    font-size: 7vh;
+}
+
+.title_text {
+    padding-top: 2vh;
+    font-size: 4vh;
+}
+
+.header_grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 85vw 15vw;
+    grid-template-rows: 4em;
+    grid-template-areas:
+    "header-left header-right"
+}
+
+.header_left {  grid-area: header-left; }
+.header-right { grid-area: header-right; }
+
+.row { 
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 70vw 15vw 15vw;
+    grid-template-areas:
+    "exam_name finish_time exam_time";
+}
+
+.exam_name {    grid-area: exam_name; }
+.finish_time {  grid-area: finish_time; }
+.exam_time {    grid-area: exam_time; }
+
+.exam_name input[type=text] {
+    font-size: 7vh;
+    width: 65vw;
+    background-color: #444;
+    color: #ddd;
+}
+
+.exam_time input[type=number] {
+    font-size: 7vh;
+    width: 10vw;
+    background-color: #444;
+    color: #ddd;
+    text-align: right;
+}
+
+.popover_form {
+    display: none;
+}
+
+input[type=button] {
+    font-size: 5vh;
+    color: white;
+    background-color: #4444cc;
+    border-radius: 5px;
+}
+
+input[type=button]:hover {
+    font-size: 5vh;
+    color: white;
+    background-color: #8888cc;
+    border-radius: 5px;
+}
+
+.paused_modal {
+    position: fixed;
+    padding: 20px 20px 20px 20px;
+    top: 30vh;
+    left: 25vw;
+    width: 50vw;
+    height: 30vh;
+    background: rgba(255,0,0,0.5);
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 7vh;
+}
+
+.share_modal {
+    position: fixed;
+    padding: 20px 20px 20px 20px;
+    top: 30vh;
+    left: 25vw;
+    width: 50vw;
+    height: 30vh;
+    background: rgba(255,255,255,1);
+    color: #000000;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12pt;
+}
+.share_info {
+
+}
+
+.display_exam_name {
+    font-size: 5vh;
+}
+
+.display_exam_time {
+    font-size: 5vh;
+    font-family: 'Roboto Mono', 'Consolas', 'Courier New';
+}
+
+.display_finish_time {
+    font-size: 5vh;
+    font-family: 'Roboto Mono', 'Consolas', 'Courier New';
+}
+
+.row_formatted {
+    background-color: #333;
+    margin-bottom: 1vh;
+}
+.less_than_30 {
+    background-color: #f4a442;
+}
+.less_than_5 {
+    background-color: #f44141;
+}
+.finished {
+    background-color: #000000;
+    text-decoration: line-through;
+}

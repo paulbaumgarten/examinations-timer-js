@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>examTimer by Paul Baumgarten</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="examtimer.css" rel="stylesheet">
+</head>
+<body>
+	<div class="header_grid">
+		<div class="header_left title_text">
+			
+		</div>
+		<div class="header_right clock">
+			00:00
+		</div>
+	</div>
+	<div id="setup" class="main_content">
+		<div class="row">
+			<div class="exam_name">
+				Exam
+			</div>
+			<div class="finish_time">
+				Finish time
+			</div>
+			<div class="exam_time">
+				Time remaining
+			</div>
+		</div>
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+		<div class="row row_formatted">
+			<div class="exam_name">
+				<input type="text" name="exam" maxlength="30">
+				<span class="display_exam_name"></span>
+			</div>
+			<div class="finish_time">
+				<span class="display_finish_time"></span>
+			</div>
+			<div class="exam_time">
+				<input type="number" name="minutes" min="0" max="240" value="0">
+				<span class="display_exam_time"></span>
+			</div>
+		</div>
+
+		<div class="controls">
+			<input type="button" id="edit" value="Edit">
+			<input type="button" id="save" value="Save">
+			<input type="button" id="share" value="Share">
+			<input type="button" id="play" value="Play">
+			<input type="button" id="pause" value="Pause">
+		</div>
+		<p>&nbsp;</p>
+		<p>Exam hall timer by Paul Baumgarten 2019<br><a href="https://examtimer.jigsawapps.net/">examtimer.jigsawappss.net</a></p>
+		<div class="paused_modal">
+			<h1>Paused</h1>
+		</div>
+		<div class="share_modal">
+			<p>The link below will pre-load the page with these exam details</p>
+			<p><textarea class="share_info" rows=10 cols=50></textarea></p>
+			<p><input type="button" id="share_close" value="Close"></p>
+		</div>
+		</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
