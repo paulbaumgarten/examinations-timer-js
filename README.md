@@ -8,10 +8,14 @@ A simple HTML+Javascript+CSS tool that can be used to display exam timing inform
 
 Time remaining will be highlighted in orange at less than 30 minutes, and in red at less than 5 minutes remaining.
 
-## Status update
+## Available online
 
-This project is currently no longer being maintained.
+* [https://paulbaumgarten.github.io/examinations-timer-js/index.html](https://paulbaumgarten.github.io/examinations-timer-js/index.html)
 
-I recommend use of the Python version, [examinations-timer](https://github.com/paulbaumgarten/examinations-timer), which is active.
+## Desktop alternative
+
+I have a Python alternative that is very similar in function if you prefer a desktop app.
+
+* [https://github.com/paulbaumgarten/examinations-timer](https://github.com/paulbaumgarten/examinations-timer).
 
 
